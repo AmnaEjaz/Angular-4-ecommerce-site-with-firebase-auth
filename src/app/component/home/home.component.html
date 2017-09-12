@@ -1,0 +1,247 @@
+
+
+<div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 class="display-3">Pick your Favs</h1>
+          <p class="lead">The best in food you will ever eat. We promise!</p>
+        </div>
+      </div>
+
+
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+     
+        <!-- Wrapper for carousel items -->
+        <div class="carousel-inner">
+                <div class="item active">
+                                <div class="col-sm-4" ><img class="cimg"src="assets/images/b2.jpg" alt="First Slide"></div>
+                                <div class="col-sm-8">
+                                        <div class="container">
+                                                
+                                                
+                                                <blockquote class="tag">
+                                                                <h2 #dishname1>DOUBLE WHOPPER® BURGER</h2>
+                                                                <br/>
+                                                                <h3>Rs. 670</h3>
+                                                                <br/>
+                                                                <input type="number" #qty1 name="quantity" value="1" min="1" max="5">  Quantity
+                                                                <br>
+                                                                <br/>
+                                                                
+                                                                <a class="col-sm-6" class="btn btn-primary btn-lg" (click)="addtocart(dishname1.textContent,670,qty1.value)">Add to Cart   </a>
+                                                                <img [hidden]="!cartshow" (click)="modal.show()" class="shadowfilter" src="assets/images/cart.png">
+                                                                                        
+                                                        </blockquote>
+                                        </div>
+                                </div>
+                        </div>   
+            <div class="item">
+                <div class="container">
+                <div class="col-sm-4" >
+                    <img class="cimg"src="assets/images/taco.jpg" alt="First Slide">
+                </div>
+                <div class="col-sm-8">
+                    <div class="container">
+                            
+                            
+                            <blockquote class="tag">
+                                    <h2 #dishname>Taco maco zing!</h2>
+                                    <br/>
+                                    <h3>Rs. 190</h3>
+                                    <br/>
+                                    <input type="number" #qty2 name="quantity" value="1" min="1" max="5">  Quantity
+                                    <br>
+                                    <br/>
+                                    
+                                    <a class="col-sm-6" class="btn btn-primary btn-lg" (click)="addtocart(dishname.textContent,190,qty2.value)">Add to Cart   </a>
+                                    <img [hidden]="!cartshow" (click)="modal.show()" class="shadowfilter" src="assets/images/cart.png">
+                                                           
+                                </blockquote>
+                    </div>
+
+                </div>
+            </div>
+            </div>
+
+          <div class="item">
+                    <div class="col-sm-4" ><img class="cimg" src="assets/images/s1.jpg" alt="First Slide"></div>
+                    <div class="col-sm-8">
+                            <div class="container">
+                                    
+                                    
+                                    <blockquote class="tag">
+                                                <h2 #dishname2>WHOPPER JR.® Sandwich</h2>
+                                                <br/>
+                                                <h3>Rs. 290</h3>
+                                                <br/>
+                                                <input type="number" #qty3 name="quantity" value="1" min="1" max="5">  Quantity
+                                                <br>
+                                                <br/>
+                                                
+                                                <a class="col-sm-6" class="btn btn-primary btn-lg" (click)="addtocart(dishname2.textContent,290,qty3.value)">Add to Cart   </a>
+                                                <img [hidden]="!cartshow" (click)="modal.show()" class="shadowfilter" src="assets/images/cart.png">
+                                                                       
+                                            </blockquote>
+                            </div>
+                    </div>
+            </div> 
+            <div class="item">
+                    <div class="col-sm-4" ><img class="cimg" src="assets/images/deserts/cake1.jpg" alt="First Slide"></div>
+                    <div class="col-sm-8">
+                            <div class="container">
+                                    
+                                    
+                                    <blockquote class="tag">
+                                                <h2 #dishname3>OREO® Cookie Cheesecake</h2>
+                                                <br/>
+                                                <h3>Rs. 360</h3>
+                                                <br/>
+                                                <input type="number" #qty4 name="quantity" value="1" min="1" max="5">  Quantity
+                                                <br>
+                                                <br/>
+                                                
+                                                <a class="col-sm-6" class="btn btn-primary btn-lg" (click)="addtocart(dishname3.textContent,360,qty4.value)">Add to Cart   </a>
+                                                <img [hidden]="!cartshow" (click)="modal.show()" class="shadowfilter" src="assets/images/cart.png">
+                                                                       
+                                            </blockquote>
+                            </div>
+                    </div>
+            </div>
+            <div class="item">
+                    <div class="col-sm-4" ><img class="cimg" src="assets/images/drinks/smoo1.jpg" alt="First Slide"></div>
+                    <div class="col-sm-8">
+                            <div class="container">
+                                    
+                                    
+                                    <blockquote class="tag">
+                                                <h2 #dishname4>FROOT LOOPS® SHAKE</h2>
+                                                <br/>
+                                                <h3>Rs. 350</h3>
+                                                <br/>
+                                                <input type="number" #qty5 name="quantity" value="1" min="1" max="5">  Quantity
+                                                <br>
+                                                <br/>
+                                                
+                                                <a class="col-sm-6" class="btn btn-primary btn-lg" (click)="addtocart(dishname4.textContent,350,qty5.value)">Add to Cart   </a>
+                                                <img [hidden]="!cartshow" (click)="modal.show()" class="shadowfilter" src="assets/images/cart.png">
+                                                                       
+                                            </blockquote>
+                            </div>
+                    </div>
+            </div>
+            <div class="item">
+                    <div class="col-sm-4" ><img class="cimg" src="assets/images/drinks/smoo3.jpg" alt="First Slide"></div>
+                    <div class="col-sm-8">
+                            <div class="container">
+                                    
+                                    
+                                    <blockquote class="tag">
+                                                <h2 #dishname5>VANILLA HAND SPUN SHAKE</h2>
+                                                <br/>
+                                                <h3>Rs. 450</h3>
+                                                <br/>
+                                                <input type="number" #qty6 name="quantity" value="1" min="1" max="5">  Quantity
+                                                <br>
+                                                <br/>
+                                                
+                                                <a class="col-sm-6" class="btn btn-primary btn-lg" (click)="addtocart(dishname5.textContent,450,qty6.value)">Add to Cart   </a>
+                                                <img [hidden]="!cartshow" (click)="modal.show()" class="shadowfilter" src="assets/images/cart.png">
+                                                                       
+                                            </blockquote>
+                            </div>
+                    </div>
+            </div> 
+            <div class="item">
+                        <div class="col-sm-4" ><img class="cimg" src="assets/images/deserts/cake2.jpg" alt="First Slide"></div>
+                        <div class="col-sm-8">
+                                <div class="container">
+                                        
+                                        
+                                        <blockquote class="tag">
+                                                    <h2 #dishname0>HERSHEY'S® SUNDAE PIE</h2>
+                                                    <br/>
+                                                    <h3>Rs. 330</h3>
+                                                    <br/>
+                                                    <input type="number" #qty7 name="quantity" value="1" min="1" max="5">  Quantity
+                                                    <br>
+                                                    <br/>
+                                                    
+                                                    <a class="col-sm-6" class="btn btn-primary btn-lg" (click)="addtocart(dishname0.textContent,330,qty7.value)">Add to Cart   </a>
+                                                    <img [hidden]="!cartshow" (click)="modal.show()" class="shadowfilter" src="assets/images/cart.png">
+                                                                           
+                                                </blockquote>
+                                </div>
+                        </div>
+                </div>
+                <div class="item">
+                                <div class="col-sm-4" ><img class="cimg" src="assets/images/b1.jpg" alt="First Slide"></div>
+                                <div class="col-sm-8">
+                                        <div class="container">
+                                                
+                                                
+                                                <blockquote class="tag">
+                                                            <h2 #dishname9>CHEESE WHOPPER® SANDWICH</h2>
+                                                            <br/>
+                                                            <h3>Rs. 660</h3>
+                                                            <br/>
+                                                            <input type="number" #qty9 name="quantity" value="1" min="1" max="5">  Quantity
+                                                            <br>
+                                                            <br/>
+                                                            
+                                                            <a class="col-sm-6" class="btn btn-primary btn-lg" (click)="addtocart(dishname9.textContent,660,qty9.value)">Add to Cart   </a>
+                                                            <img [hidden]="!cartshow" (click)="modal.show()" class="shadowfilter" src="assets/images/cart.png">
+                                                                                   
+                                                        </blockquote>
+                                        </div>
+                                </div>
+                        </div>
+        </div>
+        <!-- Carousel controls -->
+        <a class="carousel-control left" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="carousel-control right" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+    </div>
+
+    <app-cart #modal>
+                <div class="app-modal-header">
+                  <h1>Your cart!</h1>
+                </div>
+                <div class="app-modal-body"  >
+                        
+                              
+                  <div class="panel-body"*ngFor="let item of cart">
+                          {{item.name}}
+                          <span class="spanright">Rs. {{item.cost}}</span>
+                  </div>
+                                                  
+                                                
+                  <div class="panel-footer">Total:<span class="spanright">Rs. {{total}}/-</span></div>
+
+                        
+                                     
+                </div>
+                <div class="app-modal-footer" align="center" >
+                  
+                  <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                          <input type="hidden" name="cmd" value="_s-xclick">
+                          <input type="hidden" name="hosted_button_id" value="B24TQGDENQ67C">
+                          <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                          <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="5" height="5">
+                   </form>
+                  
+                </div>
+              </app-cart>
+
+
+  
+                <div style="position:relative;padding-top:30px;">
+                        <video playsinline autoplay muted loop  id="bgvid">
+                                        <source src="assets\video.mp4" type="video/mp4">
+                        </video>
+                        
+                </div>          
+                              
